@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/yourusername/devops-cicd-project.git'
+                git 'https://github.com/sskumardgl/devops-cicd-project.git'
             }
         }
 
@@ -18,7 +18,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh '/opt/homebrew/bin/docker build -t devops-app .'
+                sh 'docker build -t devops-app .'
             }
         }
     }
