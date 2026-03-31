@@ -18,7 +18,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t devops-app .'
+                sh '/opt/homebrew/bin/docker build -t devops-app .'
             }
         }
     }
